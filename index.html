@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <title>Formula 1</title>
     <style>
+      #grid{
+        display:grid;
+        grid-template-columns: 192px 1fr;
+      }
       h1{
-        font-size: 48pt;
         font-style: italic;
         text-align: center;
+        padding:12px ;
+        margin:0;
+        background-color: #e10600;
+      }
+      ul{
+        padding-top: 24px;
+        padding-bottom: 100%;
+        margin:0;
+        width: 160px;
+        background-color: #fafafa;
+        line-height: 200%;
       }
       body{
         font-family: 'Roboto', sans-serif;
+        margin:0;
       }
       a{
         color: #2f3743;
@@ -19,24 +34,19 @@
     </style>
   </head>
   <body>
-    <h1><a href="index.html" style="text-decoration: none">Kyle's Formula 1</a></h1>
-    <ul>
-      <li><a href="1.html" title="Lastest News">Lastest</a></li>
-      <li><a href="2.html" title="Formula 1 2021 Schedule">Schedule</a></li>
-      <li><a href="#" title="Championship Standing">Standing</a></li>
-      <li><a href="#" title="2021 Driver Entry">Driver</a></li>
-      <li><a href="#" title="2021 Construtor">Team</a></li>
-    </ul>
-<!--
-    <h1><a href="index.html"><font color="blue">Kyle's Formula 1</a></h1>
-    <ul>
-      <li><a href="1.html" title="Lastest News"><font color="Red">Lastest</a></li>
-      <li><a href="2.html" title="Formula 1 2021 Schedule"><font color="yellow">Schedule</a></li>
-      <li><a href="#" title="Championship Standing"><font color="green">Standing</a></li>
-      <li><a href="#" title="2021 Driver Entry"><font color="purple">Driver</a></li>
-      <li><a href="#" title="2021 Construtor"><font color="pink">Team</a></li>
-    </ul>
---->
-    <p></p>
+    <h1>
+      <a href="index.html" style="text-decoration: none">
+        <img src="f1_logo.svg" height="24px">
+      </a>
+    </h1>
+    <div id="grid">
+      <ul style="list-style-type:none;">
+        <li><a href="1.html" title="Lastest News">Lastest</a></li>
+        <li><a href="2.html" title="Formula 1 2021 Schedule">Schedule</a></li>
+        <li><a href="#" title="Championship Standing">Standing</a></li>
+        <li><a href="#" title="2021 Driver Entry">Driver</a></li>
+        <li><a href="#" title="2021 Construtor">Team</a></li>
+      </ul>
+    </div>
   </body>
 </html>
