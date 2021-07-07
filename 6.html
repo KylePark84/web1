@@ -3,86 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Formula 1</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-      h1{
-        text-align: center;
-        padding:12px ;
-        margin: 0;
-        background-color: #e10600;
-        position:fixed;
-        width: 100%;
-        box-shadow: 0px 0px 4px gray;
-      }
-      h2{
-        font-family: 'Russo One', sans-serif;
-        font-weight: normal;
-        font-size: 56px;
-        padding-top: 20px;
-        margin: 0;
-        border-bottom: 4px solid #e10600;
-      }
-      h3{
-        padding-top:16px;
-        padding-bottom: 8px;
-        margin:0;
-      }
-      body{
-        font-family: 'Roboto', sans-serif;
-        margin:0;
-      }
-      a{
-        color: #2f3743;
-        text-decoration: none;
-      }
-      #grid{
-        display:grid;
-        grid-template-columns: 192px 1fr;
-      }
-      #grid ul{
-        padding-top: 86px;
-        padding-bottom:100vh;
-        margin:0;
-        width: 160px;
-        background-color: #f2f2f2;
-        line-height: 200%;
-        box-shadow: 0px 0px 2px gray;
-      }
-      div #content{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-top: 62px;
-      }
-      .active{
-        color: #e10600;
-        font-weight:900;
-        text-transform: uppercase;
-      }
-      @media(max-width:720px){
-        #grid{
-          display: block;
-        }
-        #grid ul{
-          padding-top: 72px;
-          padding-bottom: 8px;
-          width: 100vh;
-        }
-        div #content{
-          padding-top: 0px;
-        }
-        li{
-          display: inline;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>
-      <a href="index.html" style="text-decoration: none">
-        <img src="f1_logo.svg" height="24px">
-      </a>
-    </h1>
+    <div id="header">
+      <div>
+        <a href="index.html"><img src="f1_logo.svg" height="24px"></a>
+      </div>
+    </div>
     <div id="grid">
       <ul style="list-style-type:none;">
         <li><a href="1.html" title="Lastest News">Lastest</a></li>
@@ -94,34 +22,58 @@
       </ul>
       <div id="content">
         <h2>Kyle's Formula 1 Illustration</h2>
-        <div class="">
-          <h3>Ayrton Senna in Pacific Grand-Prix 1994</h3>
+        <div>
+          <h4>Ayrton Senna / Pacific Grand-Prix 1994</h4>
           <img src="illust/01_1994_Senna_Pacific.jpg" width="100%" alt="">
         </div>
-        <h3>Alain Prost in Monaco Grand-Prix 1990</h3>
-        <img src="illust/02_1990_Prost_Monaco.jpg" width="100%" alt="">
-        <h3>Juan Pablo Montoya in Italian Grand-Prix 2005</h3>
-        <img src="illust/03_2005_Montoya_Italy.jpg" width="100%" alt="">
-        <h3>Heinz-Harald Frentzen in San-Marino Grand-Prix 1997</h3>
-        <img src="illust/04_1997_Frentzen_Imola.jpg" width="100%" alt="">
-        <h3>Fernando Alonso in Monaco Grand-Prix 2008</h3>
-        <img src="illust/05_2008_Alonso_Monaco.jpg" width="100%" alt="">
-        <h3>Mclaren MP4/6</h3>
-        <img src="illust/06_1991_Mclaren_MP4-6.jpg" width="100%" alt="">
-        <h3>Kimi Räikkönen in Turkish Grand-Prix 2005</h3>
-        <img src="illust/07_2005_Raikkonen_Turkey.jpg" width="100%" alt="">
-        <h3>Sebastian Vettel in European Grand-Prix 2008</h3>
-        <img src="illust/08_2008_Vettel_Valencia.jpg" width="100%" alt="">
-        <h3>Valtteri Bottas in Spanish Grand-Prix 2014</h3>
-        <img src="illust/09_2014_Bottas_Spain.jpg" width="100%" alt="">
-        <h3>Mark Webber in German Grand-Prix 2009</h3>
-        <img src="illust/10_2009_Webber_Germany.jpg" width="100%" alt="">
-        <h3>Nico Rosberg in Italian Grand-Prix 2012</h3>
-        <img src="illust/11_2012_Rosberg_Italy.jpg" width="100%" alt="">
-        <h3>Sergio Perez in Malaysian Grand-Prix 2014</h3>
-        <img src="illust/12_2014_Perez_Malaysia.jpg" width="100%" alt="">
-        <h3>Daniel Ricciardo in Monaco Grand-Prix 2019</h3>
-        <img src="illust/13_2019_Ricciardo_Monaco.jpg" width="100%" alt="">
+        <div>
+          <h4>Alain Prost / Monaco Grand-Prix 1990</h4>
+          <img src="illust/02_1990_Prost_Monaco.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Juan Pablo Montoya / Italian Grand-Prix 2005</h4>
+          <img src="illust/03_2005_Montoya_Italy.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Heinz-Harald Frentzen / San-Marino Grand-Prix 1997</h4>
+          <img src="illust/04_1997_Frentzen_Imola.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Fernando Alonso / Monaco Grand-Prix 2008</h4>
+          <img src="illust/05_2008_Alonso_Monaco.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Mclaren MP4/6</h4>
+          <img src="illust/06_1991_Mclaren_MP4-6.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Kimi Räikkönen / Turkish Grand-Prix 2005</h4>
+          <img src="illust/07_2005_Raikkonen_Turkey.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Sebastian Vettel / European Grand-Prix 2008</h4>
+          <img src="illust/08_2008_Vettel_Valencia.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Valtteri Bottas / Spanish Grand-Prix 2014</h4>
+          <img src="illust/09_2014_Bottas_Spain.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Mark Webber / German Grand-Prix 2009</h4>
+          <img src="illust/10_2009_Webber_Germany.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Nico Rosberg / Italian Grand-Prix 2012</h4>
+          <img src="illust/11_2012_Rosberg_Italy.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Sergio Perez / Malaysian Grand-Prix 2014</h4>
+          <img src="illust/12_2014_Perez_Malaysia.jpg" width="100%" alt="">
+        </div>
+        <div>
+          <h4>Daniel Ricciardo / Monaco Grand-Prix 2019</h4>
+          <img src="illust/13_2019_Ricciardo_Monaco.jpg" width="100%" alt="">
+        </div>
       </div>
     </div>
   </body>

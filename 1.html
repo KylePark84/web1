@@ -3,81 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Formula 1</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-      h1{
-        text-align: center;
-        padding:12px ;
-        margin: 0;
-        background-color: #e10600;
-        position:fixed;
-        width: 100%;
-        box-shadow: 0px 0px 4px gray;
-      }
-      h2{
-        font-family: 'Russo One', sans-serif;
-        font-weight: normal;
-        font-size: 56px;
-        padding-top: 20px;
-        margin: 0;
-        border-bottom: 4px solid #e10600;
-      }
-      body{
-        font-family: 'Roboto', sans-serif;
-        margin:0;
-      }
-      a{
-        color: #2f3743;
-        text-decoration: none;
-      }
-      #grid{
-        display:grid;
-        grid-template-columns: 192px 1fr;
-      }
-      #grid ul{
-        padding-top: 86px;
-        padding-bottom:100vh;
-        margin:0;
-        width: 160px;
-        background-color: #f2f2f2;
-        line-height: 200%;
-        box-shadow: 0px 0px 2px gray;
-      }
-      div #content{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-top: 62px;
-      }
-      .active{
-        color: #e10600;
-        font-weight:900;
-        text-transform: uppercase;
-      }
-      @media(max-width:720px){
-        #grid{
-          display: block;
-        }
-        #grid ul{
-          padding-top: 72px;
-          padding-bottom: 8px;
-          width: 100vh;
-        }
-        div #content{
-          padding-top: 0px;
-        }
-        li{
-          display: inline;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>
-      <a href="index.html" style="text-decoration: none">
-        <img src="f1_logo.svg" height="24px">
-      </a>
-    </h1>
+    <div id="header">
+      <div>
+        <a href="index.html"><img src="f1_logo.svg" height="24px"></a>
+      </div>
+    </div>
     <div id="grid">
       <ul style="list-style-type:none;">
         <li><a href="1.html" title="Lastest News" class="active">Lastest</a></li>
@@ -89,8 +22,8 @@
       </ul>
       <div id="content">
         <h2>LASTEST NEWS</h2>
+        <h3>It’s advantage Verstappen after France but can <u>Hamilton</u> hit back in Red Bull’s backyard?</h3>
         <img src="image.jpg" width="100%" alt="">
-        <h4>It’s advantage Verstappen after France but can <u>Hamilton</u> hit back in Red Bull’s backyard?</h4>
         <p style="margin-top:32px;">Up until last year, the Red Bull Ring has become a happy hunting ground for the venue’s owners Red Bull, with Max Verstappen triumphing in 2018 and 2019. But when they were expected to triumph at the Austrian double header in 2020 – they didn’t deliver the goods. So what Red Bull can we expect this year? And will Mercedes rebound from their strategic defeat in France?</p>
         <p><strong>Red Bull favourites for victory</strong></p>
         <p>The paddock is buzzing with excitement about the title battle that is brewing with increasing intensity between Mercedes and Red Bull and Lewis Hamilton and Verstappen. For the first time in years, we are arriving at Grands Prix not knowing who is going to win. It’s the holy grail.
