@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 #header{
   text-align: center;
-  padding: 16px;
+  padding: 16px 16px 16px 24px;
   margin: 0;
   background-color: #e10600;
   position:fixed;
   width: 100%;
   box-shadow: 0px 0px 4px gray;
+  display:flex;
+  justify-content: space-between;
+}
+#login{
+  padding-right: 48px;
 }
 h2{
   font-family: 'Russo One', sans-serif;
@@ -24,6 +29,18 @@ h3{
   margin:0;
 }
 h4{
+  color: orange;
+  font-family: 'Russo One', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+}
+h5{
+  font-family: 'Russo One', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 8px;
   margin-bottom: 4px;
 }
 body{
@@ -59,17 +76,36 @@ div #content{
 }
 .past_event{
   margin-top: 0px;
+  margin-bottom: 0px;
   color:gray;
   font-size: 11pt;
 }
 .next_event{
   margin-top: 0px;
+  margin-bottom: 0px;
   color:#e10600;
   font-size: 14pt;
   font-weight: 700;
 }
+.card{
+  margin: 16px 8px 0px 0px;
+  list-style-type: none;
+  padding: 16px;
+  box-shadow: 0px 0px 2px gray;
+  height: 120px;
+  width: 360px;
+  border-radius: 8px;
+  display: inline-grid;
+}
 .event{
+  color: #d2d2d2;
+  font-weight:400;
   margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 0px 0px 10px Black;
+}
+.dashboard{
+
 }
 @media(max-width:720px){
   #grid{
@@ -85,5 +121,8 @@ div #content{
   }
   li{
     display: inline;
+  }
+  .card{
+    grid-template-rows: 24px;
   }
 }
