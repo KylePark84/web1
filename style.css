@@ -78,6 +78,7 @@ a{
 #grid ul{
   font-family: 'Russo One', sans-serif;
   font-weight: normal;
+  height: 100vh;
   padding-top: 86px;
   margin:0;
   background-color: #f2f2f2;
@@ -107,6 +108,9 @@ a{
   font-size: 14pt;
   font-weight: 700;
 }
+#dashboard{
+
+}
 .card{
   margin: 16px 8px 0px 0px;
   list-style-type: none;
@@ -124,9 +128,6 @@ a{
   margin-bottom: 0px;
   text-shadow: 0px 0px 10px Black;
 }
-.dashboard{
-
-}
 @media(max-width:720px){
   .main{
     padding-top: 0px;
@@ -140,6 +141,7 @@ a{
   #grid ul{
     padding-top: 72px;
     padding-bottom: 8px;
+    height: 36px;
     width: 100vh;
   }
   #content{
