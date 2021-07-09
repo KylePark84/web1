@@ -54,7 +54,7 @@ img{
 #login{
   padding-right: 48px;
 }
-.main{
+#main{
   padding-top: 38px;
   margin: 62px 40px 40px 40px;
   text-align: center;
@@ -81,7 +81,7 @@ img{
 #grid ul{
   font-family: 'Russo One', sans-serif;
   font-weight: normal;
-  height: 100vh;
+  height: 100%;
   padding-top: 86px;
   margin:0;
   background-color: #f2f2f2;
@@ -132,8 +132,9 @@ img{
   text-shadow: 0px 0px 10px Black;
 }
 @media(max-width:1024px){
-  .main{
+  #main{
     padding-top: 0px;
+    margin: 40px;
   }
   #banner{
     height: 100px;
