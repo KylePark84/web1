@@ -78,11 +78,12 @@ img{
   display:grid;
   grid-template-columns: 200px 1fr;
 }
-#grid ul{
+.nav{
   font-family: 'Russo One', sans-serif;
   font-weight: normal;
   height: 100vh;
   padding-top: 86px;
+  padding-left: 40px;
   margin:0;
   background-color: #f2f2f2;
   line-height: 200%;
@@ -133,6 +134,10 @@ img{
   text-shadow: 0px 0px 10px Black;
 }
 @media(max-width:1024px){
+  a{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   #main{
     padding-top: 0px;
     margin: 40px;
@@ -143,17 +148,16 @@ img{
   #grid{
     display: block;
   }
-  #grid ul{
+  .nav{
     padding-top: 72px;
     padding-bottom: 8px;
+    padding-left: 0px;
     height: 36px;
-    width: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   #content{
     padding-top: 0px;
-    }
-  li{
-    padding-right: 20px;
-    display: inline;
   }
 }
